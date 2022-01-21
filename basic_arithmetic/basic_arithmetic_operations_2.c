@@ -12,7 +12,7 @@ int remainder;
 int main(void)
 {
 
-printf("Hello Enter first number:");
+printf("Hello, Enter first number:");
 scanf("%d", &first);
 
 printf("Enter second number:");
