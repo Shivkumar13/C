@@ -32,7 +32,7 @@ int main(void)
 
     n = -100.009;
     m = !n;             //Make sure you are giving type specifier correctly
-    printf("(n is negative):n=%d, m=%d\n", n, m);
+    printf("(n is negative):n=%lu, m=%d\n", n, m);
 
 
     n = 2200;
