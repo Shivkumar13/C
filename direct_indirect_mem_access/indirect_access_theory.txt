@@ -17,7 +17,7 @@ movl %r0, $n     #register 0 will contain the address of n
 movl (%r0), $25  # This instruction will tell microprocessor
                  # to interpret the content of register 0 as an address of memory
                  # location and will ask microprocessor to write 25 from 
-                 # four bytes of that address.
+                 # four bytes from that address.
                  # Because we have stored the address of n in r0 in  previous 
                  # instruction, this instruction will have the effect of writing 
                  # 50 on n.
