@@ -31,7 +31,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
    hCursor = LoadCursor(NULL, IDC_ARROW);
    assert(hCursor);
 
-   hIcon = LoadIcon(NULL, IDI_APPLUCATION);
+   hIcon = LoadIcon(NULL, IDI_APPLICATION);
    assert(hIcon);
 
    hIconSm = LoadIcon(NULL, IDI_APPLICATION);
