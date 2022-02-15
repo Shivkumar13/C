@@ -7,7 +7,7 @@
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
-int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd);
+int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
     static TCHAR szAppname[] = TEXT("Hellowin  App");
     static TCHAR szWindowname[] = TEXT("Hellowin!");
@@ -53,8 +53,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     assert(bRet);
 
     hWnd = CreateWindowsEx(WS_EX_APPWINDOW, szAppname, szWindowname,
-    WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
-    NULL, NULL, hInstance, NULL);
+                         WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, CW_USEDEFAULT,
+                         NULL, NULL, hInstance, NULL);
 
     assert(hWnd != NULL);
 

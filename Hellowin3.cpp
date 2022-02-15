@@ -5,7 +5,7 @@
 #pragma comment(lib, "gdi32.lib");
 #pragma comment(lib, "user32.lib");
 
-LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg. WPARAM wParam, LPARAM lParam);
+LRESULT CALLBACK WndProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nShowCmd)
 {
