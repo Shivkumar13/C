@@ -20,7 +20,7 @@ int main(void)
 
     for(int i=0; i < 5; ++i)
     {
-        printf("Address arithmetic of structure is %llu\n", (unsigned long long int)(ptr+i));
+        printf("Pointer arithmetic of structure is %llu\n", (unsigned long long int)(ptr+i));
     }
 
     exit(0);
