@@ -7,7 +7,7 @@ int main(void)
     short* short_ptr = (short*)1000;
 
     for(int i=0; i < 5; ++i)
-        printf("Address of short integers are %llu\n",short_ptr + i);
+        printf("short_ptr + %d = %llu\n",i, (unsigned long long int)(short_ptr + i));
 
     exit(0);
 }
