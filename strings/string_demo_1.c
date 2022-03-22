@@ -12,7 +12,7 @@ int main(void)
     for(int i=0; i < 5; i++)
         printf("Array elements at index %d is %c\n", i, char_arr[i]);
 
-    puts("printing char arrau char_arr[2]");
+    puts("printing char array char_arr");
     for(int i=0; i < 3; ++i)
         printf("Array elements at index %d is %c\n", i, char_arr_2[i]);
 
