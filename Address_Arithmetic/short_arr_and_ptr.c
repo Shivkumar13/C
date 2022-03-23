@@ -24,7 +24,7 @@ int main(void)
         }
     
     show(&s_arr[0]);
-
+ 
     exit(0);
 
 }
