@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+    int i;
+    for(i =1; i <=16; i*= 2)
+        printf("i=%d\n", i);
+    exit(0);
+}
+
+/*
+Track i = 1
+    Checking i <= 16: 1 <= 16: TRUE
+        Execute body(printf("i=%d\n", i);)
+i = 1
+
+i *= 2: i = i * 2: i = 1 * 2: i = 2
+
+Track i = 2
+    Checking i <= 16: 2 <= 16: TRUE
+        Execute body(printf("i  = %d\n,i");)
+i = 2
+
+i *= 2: i = i * 2: i = 2 * 2: i = 4
+
+Track i = 4 
+    Checking i <= 16: 4 <= 16: TRUE
+        Execute body(printf("i = %d\n", i);)
+i = 4
+
+i *= 2: i = i * 2: i = 4 * 2: i = 8
+
+Track i = 8
+    Checking i <= 16: 8 <= 16: TRUE
+        Execute body(printf("i =%d\n", i);)
+i = 8
+
+i *= 2: i = i * 2: i = 8 * 2: i = 16
+
+Track i = 16
+    Checking i <= 16: 16<= 16: TRUE
+        Execute body(printf("i =%d\n", i);)
+i = 16
+
+i *= 2 : i = i * 2: i = 16 * 2: i = 32
+
+Track i = 32
+    Checking i <= 16: 32 <= 16: FALSE
+
+    exit(0);
+
+*/
