@@ -4,14 +4,14 @@
 int main(void)
 {
     int i;
-    for(i=1; i <= 16; i = i <<2)
+    for(i=1; i <= 16; i = i << 2)
         printf("i = %d\n", i);
     exit(0);
 }
 
 /*
 Track i = 1
-    Checking i <= 16: 1 <= 16: TRUE
+    Checking i <= 16: 1 <= 16: TRUEsomething very big than 16
         Execute body(printf("i=%d\n", i);)
 i = 1
 
