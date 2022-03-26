@@ -18,6 +18,8 @@ int main(void)
 
     sum = addition(x, y);
 
+     printf("value of x after calling addition function is %d\n", x);
+    printf("value of y after calling addition function is %d\n", y);
     printf("Addition is %d\n", sum);
     
     exit(0);
