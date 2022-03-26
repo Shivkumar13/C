@@ -12,11 +12,19 @@ int main(void)
     printf("Value of s before calling addition is %d\n", s);
     printf("Value of o before calling addition is %d\n", o);
 
+
+    printf("Address of s before calling addition is %llu\n", (unsigned long long int)&s);
+    printf("Address of o before calling addition is %llu\n", (unsigned long long int)&o);
+
     sum = addition_pass_by_addr(&s, &o);
     printf("Summation is %d\n", sum);
 
     printf("Value of s after calling addition is %d\n", s);
     printf("Value of o after calling addition is %d\n", o);
+
+
+    printf("Address of s after calling addition is %llu\n", (unsigned long long int)&s);
+    printf("Address of o after calling addition is %llu\n", (unsigned long long int)&o);
 
     exit(0);
     
