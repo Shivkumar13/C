@@ -17,7 +17,7 @@ int main(void)
 
 void swap(int* l, int* k)
 {
-    int* temp;
+    int* temp = 0;
     int gg;
     temp = &gg;
 
