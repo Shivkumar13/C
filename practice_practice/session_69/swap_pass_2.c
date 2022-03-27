@@ -24,7 +24,13 @@ void swap(int* p, int* q)
 {
     int tmp;
 
-    printf("swap start, i = %d, j=%d\n", *p, *q);
+    printf("swap function start, i = %d, j=%d\n", *p, *q);
+
+    printf("Address OF p = %llu\n", (unsigned long long int)&p);
+    printf("Address OF q = %llu\n", (unsigned long long int)&q);
+    printf("Address IN p = %llu\n", (unsigned long long int)p);
+    printf("Address IN q =%llu\n", (unsigned long long int)q);
+
     tmp = *p;
     *p = *q;
     *q = tmp;
