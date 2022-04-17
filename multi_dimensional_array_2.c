@@ -79,6 +79,7 @@ int func_sum_col(int a[R][C], int nr, int nc, int cl_n, int* p)
     }
     else{
         puts("Invalid column number!");
+        exit(EXIT_FAILURE);
     }
 
     *p = sum;
