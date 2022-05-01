@@ -14,11 +14,9 @@ float func_area(float a, float b, float c, float d, float s_peri);
 int main(void)
 {
    int m, n;
+  
    accept_data();
-   puts("----");
-   printf("a =%f, b = %f\n", a, b);
-   
- 
+  
    m = ((a > 0) && (b > 0) && (c > 0) && (d > 0));
    n = ((a+b+c) > d) && ((b+c+d) > a) && ((c+d+a) > b) && ((a+b+d) > c);
 
