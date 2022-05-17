@@ -1,0 +1,200 @@
+
+1] char(*(*(*(*p)[5])(int, int))[3])(void)
+
+p is pointer to array 5 of pointer to function accepting int, int returning poiner 
+to array 3 of pointer to function accepting void returning char.
+
+p is pointer to array 5 of pointer to function accepting int, int returning pointer 
+to array 3 of pointer to functionaccepting void returning char.
+
+p is pointer to array 5 of pointer to function accepting int, int returning pointer 
+to array 3 of pointer to function accepting void returning char.
+
+p is pointer to array  5 of pointer to function accepting int, int returning pointer
+to array 3 of pointer to function accepting void returning char.
+
+p is pointer to array 5 of pointer to function accepting int, int returnig pointer
+to array 3 of pointers to function accepting void returning char.
+
+2] int *(*(*x())[5])(int); 
+
+x is a function accepting void returning pointer to array 5 of pointer to a 
+function accepting int returning pointer to int.
+
+x is a function accepting void returning pointer to array 5 of pointer to a 
+function accepting int returing pointer to int
+
+x is a function accepting void returning pointer to array 5 of pointer to a
+function accepting int returning pointer to int
+
+x is a function accepting void returning pointer to array 5 of pointer to a
+function accepting int returning pointer to int
+
+x is a function accepting void and returning pointer to array 5 of poiner to a
+function accepting int returning pointer to int
+
+3] arr is array 5 of pointer to function returning pointer to array
+3 of pointer to function returning pointer to array 5 of pointer to array                     
+3 of char
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3]
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+
+4] Write a function which returns pointer declared in P1
+
+    P1 =>    char(*(*(*(*p)[5])(int, int))[3])(void); 
+
+
+        char (*(*(*(*func_name())[5])(int, int))[3])(void);
+
+        char (*(*(*(*my_test())[5])(int, int))[3])(void);
+
+        char (*(*(*(*random())[5])(int, int))[3])(void);
+
+        char (*(*(*(*func())[5])(int, int))[3])(void);
+
+        char (*(*(*(*fun())[5])(int, int))[3])(void);
+
+
+5] Declare a pointer to function in P4
+
+        char (*(*(*(*       func())[5])(int, int))[3])(void);
+
+        char (*(*(*(*(*pfn)())[5])(int, int))[3])(void)
+
+        char (*(*(*(*(*pfn)())[5])(int, int))[3])(void)
+
+        char (*(*(*(*(*pfn)())[5])(int, int))[3])(void);
+
+
+6]  Declare a pointer to entity in P2
+
+   p2 => int *(*(*x())[5])(int); 
+
+           int *(*(*(*pfn)())[5])(int);
+
+           int *(*(*(*pfn)())[5])(int);
+
+           int *(*(*(*pfn)())[5])(int);
+
+           int *(*(*(*pfn)())[5])(int);]
+        
+           int *(*(*(*pfn)())[5])(int);
+
+7] Declare a pointer to entity in P3
+
+      P3 =>> char (*(*(*(*(*arr[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*(*p)[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*(*p)[5])())[3])())[5])[3];
+
+            char (*(*(*(*(*(*p)[5])())[3])())[5])[3];
+
+char (*(*(*(*(*(*p_arr)[5])(void))[3])(void))[5])[3]; Right.......!
+
+8] Declare a constant pointer to int                                   int *const p ;
+
+         int *const p;
+
+9] Declare pointer to constant int                              const int*  p;
+
+         const int* p ;
+
+
+10] Declare a const pointer to const int                         const int *const p ;
+
+         const int *const p;
+
+11] Declare a const pointer to array 5 of int                   int (*const p) [5];
+
+         int (*const p)[5];
+
+12] Declare a pointer to array of const int                      const int (*p)[];
+
+         const int (*p)[];
+
+13] Declare a const pointer to array of const int  
+
+         const int (*const p)[];                                        const int (*const p)[];
+
+14] Declare a const pointer to function accepting int 
+    returning int                                                               int (*const p)(int);
+
+          int (*const p)(int);
+
+15] Declare a const pointer to function accepting const int                        const int* (*const pfn)(const int);
+    and returning pointer to const int 
+
+            const int *(*const pfn)(const int);
+
+16]  Declare a const pointer to function accepting const int 
+    and returning const pointer to array 5 of const int 
+
+        
+        const int (*const (*const pfn)(const int))[5] = fun_name; 
+
+
+   Declare a const pointer to function accepting const int 
+    and returning const pointer to array 5 of const int 
+
+                const int (*const (*const pfn)(const int))[5];
+
+                const int (*const (*const pfn)(const int))[5];
+
+                const int (*const (*const pfn)(const int))[5];
+
+                const int (*const (*const pfn)(const int))[5];
+
+                const int (*const (*const pfn)(const int))[5];
+
+                const int (*const (*const pfn)(const int))[5];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
