@@ -1,13 +1,31 @@
-#include <stdio.h>
+    #include <stdio.h>
 #include <stdlib.h>
+
+unsigned int num = 0xa0b0c0d0;
+
+
+/*
+x   x+1   x+2  x+3
+d0  c0    b0   a0
+*/
 
 int main(void)
 {
-    unsigned int hex_num = 0xa0b0c0d0;
-    unsigned short s_int;
 
-    s_int = (unsigned short)hex_num;
-    printf("s_int = %hx\n", s_int);
+        unsigned int i;
+        unsigned char uc;
 
-    return(0);
+        printf("&num = %p\n", &num);
+        printf("&num + 1 = %p\n",  ((char*)&num) + 1);
+
+        puts("with for loop");
+        
+        for(i = 0; i < sizeof(unsigned int); ++i)
+        {
+            printf("Elements are %hhx, Address of bytes are %llu\n", *(unsigned char*)((char*)&num + i), (unsigned long long int)(char*)&num + i);
+        }
+
+
+        return(0);
+
 }
