@@ -1,4 +1,4 @@
-    #include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 unsigned int num = 0xa0b0c0d0;
