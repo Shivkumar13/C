@@ -19,9 +19,18 @@ int main(void)
     puts("Enter the distance between two:");
     scanf("%f", &r);
 
+    
     f = (k * q1 * q2) / (r * r);
 
-    printf("The magnitude of the force if %f N\n", f);
+    if((q1 < 0 && q2 > 0) || (q1 > 0 && q2 < 0))
+    {
+        puts("q1 and q2 will attract each other");
+    }
+    else{
+        puts("q1 and q2 will repel each other");
+    }
 
-exit(0);
+    printf("The magnitude of the force is %f \n", f);
+
+    exit(0);
 }

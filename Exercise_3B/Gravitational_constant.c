@@ -20,12 +20,14 @@ double D;
 
 int main(void)
 {
-    long double G = 0.00000006673;
+    double G =;
     
     D = pow(10, 11);
+    
+    G = 6.67e-11;
 
     printf("Value of D is %lf\n", D);
-    printf("Value of G is %Lf\n", G);
+    printf("Value of G is %lf\n", G);
     exit(0);
     
 }
