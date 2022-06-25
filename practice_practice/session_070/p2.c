@@ -19,7 +19,8 @@ int main(void)
     unsigned int u_i= 90;
     printf("Value of i = %d, u_i=%u before calling mult func\n", i, u_i);
     mult_by_10(&i, &u_i);
-    printf("Value of i = %d and u_i=%u after calling mult function\n", i, u_i);
+    printf("Value of i = %d and u_i=%u after calling mult function\n", i, u_i);6.476578 before calling do_half
+Value of float f=172.283493, double=17
 
     long int lng_int_i = -123455;
     unsigned long int u_lng_int = 978372;

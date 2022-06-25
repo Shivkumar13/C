@@ -16,6 +16,7 @@ int main(void)
     ret1 =  MAX(n1, n2);
     ret2 = MAX(f1, f2);
     ret3 = MAX(d1, d2);
+    ret1 = MAX(n1+n1, (int)(f1+f2));
 
     printf("ret1= %d, ret2 = %f, ret3 = %d\n", ret1, ret2, ret3);
 

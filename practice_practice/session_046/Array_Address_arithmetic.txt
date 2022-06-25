@@ -1,0 +1,19 @@
+int a[8];
+
+a   1*4    2*4    3*4     4*4     5*4     6*4     7*4
+[ ] [ ]    [ ]    [ ]     [ ]     [ ]     [ ]     [ ]
+x   x+4  x+8      x+12    x+16    x+20    x+24    x+28
+
+
+ith anonymous element will be at address: Base address of A + i * (Sizeof(typeof(element)));
+                                          = x + i * 4
+
+Let T be a defined data type.
+Let T A[N]; be an array of N instances of Type T where N > 0;
+Let i be a valid index in Array A (0 <= i < N) 
+then address of ith element is given by
+=
+Base address of A + i * sizeof(typeof(ArrayElement))
+Base Address of A + i * Sizeof(T)
+
+

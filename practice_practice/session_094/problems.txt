@@ -165,7 +165,7 @@ char (*(*(*(*(*(*p_arr)[5])(void))[3])(void))[5])[3]; Right.......!
         const int (*const (*const pfn)(const int))[5] = fun_name; 
 
 
-   Declare a const pointer to function accepting const int 
+   Declare a const pointer to function accep ting const int 
     and returning const pointer to array 5 of const int 
 
                 const int (*const (*const pfn)(const int))[5];
