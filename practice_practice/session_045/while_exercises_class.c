@@ -5,7 +5,7 @@ int main(void)
 {
     int i;
 
-    puts("one");  //7
+    puts("one");  //6
     i = 5;
     while(i < 35)
     {

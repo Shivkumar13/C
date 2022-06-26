@@ -16,15 +16,7 @@ An array of a struct can be declared either using the static memory or dynamic m
 How to create an array of structs with malloc function in C
 
 The structs in C programming are used similarly to classes. The execution time of the structs is relatively faster than the classes. To understand the struct, consider the example:
-MY LATEST VIDEOS
-1
-2
-3
-4
-5
-6
-7
-	
+
 struct employees{
 
 int emp_id;
@@ -33,8 +25,7 @@ char emp_name;
 
 };
 
-We have a struct of “employees” which has two further members; emp_int and emp_char. We can form an array using the struct employees as:
-1
+We have a struct of “employees” which has two further members; emp_int and emp_name. We can form an array using the struct employees as:
 	
 struct employees employeesData[4];
 
