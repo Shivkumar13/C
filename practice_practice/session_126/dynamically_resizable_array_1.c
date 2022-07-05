@@ -102,9 +102,9 @@ void show_vector(struct vector_of_integers* p_vector, const char* msg)
 
 void destroy_vector(struct vector_of_integers* p_vector)
 {
-    free(p_vector->p_arr);
+    if(p_vector->p_arr != NULL)
+        free(p_vector->p_arr);
     free(p_vector);
-
     p_vector = NULL;
 }
 
