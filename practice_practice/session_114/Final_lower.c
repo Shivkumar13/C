@@ -24,7 +24,6 @@ int main(void)
     puts("Printing original Array...");
     for(i = 0; i < N; ++i)
         {
-            
             for(j = 0; j < N; ++j)
                 {
                     printf("%d\t",a[i][j]);
@@ -33,10 +32,10 @@ int main(void)
         }
 
     puts("Printing Lower half:");
-    for(i = 1; i < N; ++i)
+    for(i = 0; i < N; ++i)
     {
         puts("\n");
-        for(j = i; j < i; ++j)
+        for(j = 0; j < i; ++j)
             {
                 printf("%d\t", a[i][j]);
             }

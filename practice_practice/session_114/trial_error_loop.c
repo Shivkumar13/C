@@ -29,6 +29,13 @@ int main(void)
     }
 
 
+    for(i = 0; i < N; ++i)
+    {
+        for(j = 1; j > i; ++j)
+            {
+                printf("");
+            }
+    }
 
     exit(0);
 
