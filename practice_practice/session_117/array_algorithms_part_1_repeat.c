@@ -44,7 +44,7 @@ void get_reversed_array(int* p_arr_src, size_t src_N, int** p_arr_reversed, size
     
     for(i = src_N - 1; ((long long)i) >= 0; --i)
     {
-        p_arr_r[src_N - 1 - i] = p_arr_src[i];
+        p_arr_r[i] = p_arr_src[src_N - i - 1];
     }
 
     *p_arr_reversed = p_arr_r;
@@ -58,7 +58,7 @@ void reverse_array(int* p_arr_src, size_t src_N)
     for(i = 0; i < src_N/2; ++i)
     {
         tmp = p_arr_src[i];
-        p_arr_src[i] = p_arr_src[src_N - i - 1];
+        p_arr_src[i] = p_arr_src[src_N - 1 - i];
         p_arr_src[src_N - i - 1] = tmp;
     } 
 }
@@ -73,7 +73,17 @@ void show(int* p_arr, size_t N, const char* msg)
         printf("p_arr[%llu]:%d\n", i, p_arr[i]);
 }
 
+/*
+reverse_Array(int* p_arr, size_t src_N)
+{
+     int tmp;
+     int i;
 
-
-
-
+    for(i = 0; i < src_N/2; ++i)
+    {
+        tmp = p_arr[i];
+        p_arr[i] = p_arr[src_N - 1 - i];
+        p_arr[src_N - 1 - i] = tmp;
+    }
+}
+*/
