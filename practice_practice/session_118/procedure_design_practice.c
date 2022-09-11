@@ -279,6 +279,7 @@ void* xcalloc(size_t nr_elements, size_t size_per_element)
     @return: Base address of resized memory block.
 */
 
+/*
 void* realloc(void* old_ptr, size_t new_size)
 {
     void* new_ptr = NULL;
@@ -288,3 +289,4 @@ void* realloc(void* old_ptr, size_t new_size)
 
     return(new_ptr);
 }
+*/

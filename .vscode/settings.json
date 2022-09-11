@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "*.tcc": "c",
+        "string_view": "c",
+        "algorithm": "c",
+        "random": "c",
+        "istream": "c",
+        "limits": "c",
+        "numeric": "c",
+        "stdlib.h": "c",
+        "generic_headerfile.h": "c",
+        "genericheaderfile.h": "c",
+        "genheadfil.h": "c"
+    }
+}

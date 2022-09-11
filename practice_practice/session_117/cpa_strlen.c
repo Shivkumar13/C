@@ -18,7 +18,7 @@ int main(void)
     
 }
 
-size_t cpa_strlen(const char* str)
+size_t  cpa_strlen(const char* str)
 {
     int i = 0;
 
@@ -30,65 +30,49 @@ size_t cpa_strlen(const char* str)
     return (i);
 }
 
+size_t cpa_strlen(const char* p_str)
+{
+    size_t i;
 
+    i = 0;
+    while(*(p_str + i) != '\0')
+        i = i + 1;
+    
+    return (i);
+}
 
+size_t cpa_strlen(const char* p_str)
+{
+    size_t i;
 
+    i = 0;
+    while(*(p_str + i) != '\0')
+        i = i + 1;
+    
+    return (i);
+}
 
+size_t cpa_strlen(const char* p_str)
+{
+    size_t i;
 
+    i = 0;
+    while(*(p_str + i) != '\0')
+        i = i + 1;
 
+    return (i);
+}
 
+size_t cpa_strlen(const char* p_str)
+{
+    size_t i;
 
+    i = 0;
+    while(*(p_str + i) != '\0')
+        i = i + 1;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    return (i);
+}
 
 
 
