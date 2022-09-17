@@ -52,6 +52,9 @@ void show_list(struct node* p_list, char* msg);
 void test_suite(void);
 void test_suite_2(void);
 void test_suite_3(void);
+void test_suite_4(void);
+void test_suite_5(void);
+
 
 
 struct node {
@@ -64,7 +67,10 @@ int main(void)
 {
     //test_suite();
     //test_suite_2();
-    test_suite_3();
+    //test_suite_3();
+    //test_suite_4();
+    test_suite_5();
+
 
     return (0);
 }
@@ -658,10 +664,153 @@ void test_suite_3(void)
     p_merged_list = NULL;
 }
 
-/*
-int to_array(struct node* p_list_1, int** pp_arr, int* p_size); 
-int to_list(int* p_arr, int N, struct node** pp_list); 
+void test_suite_4(void)
+{
 
-int get_reversed_list(struct node* p_list, struct node** pp_reversed_list); 
+    int* p_arr = NULL;
+    struct node* p_list = NULL;
+    int size = 0;
+    int ret , i;
+
+    p_list = create_list();
+
+    for(i = 0; i < 10; ++i)
+    {
+        ret = insert_at_end(p_list, (i+1)*2);
+        assert(ret == SUCCESS);
+    }
+    show_list(p_list, "Showing Original List");
+
+    to_array(p_list, &p_arr, &size);
+    for(i = 0; i < size; ++i)
+        printf("p_arr[%d] = %d\n", i, p_arr[i]);
+
+    destroy_list(p_list);
+    p_list = NULL;
+    free(p_arr);
+    p_arr= NULL;
+
+    int* p_arr_1 = NULL;
+    int arr_size = 10;
+    int c;
+    int ret_val;
+    struct node* p_list_1 = NULL;
+
+    p_arr_1 = (int*)calloc(arr_size, sizeof(int));
+    assert(p_arr_1 != NULL);
+
+    for(c = 0; c < 10; ++c)
+    {
+        p_arr_1[c] = (c + 1) * 10;
+    }
+    
+    ret_val = to_list(p_arr_1, size, &p_list_1); 
+    assert(ret == SUCCESS);
+
+    show_list(p_list_1, "Showing to list - List");
+
+}
+
+
+void test_suite_5(void)
+{
+
+    struct node* p_list = NULL;
+    struct node* p_reversed_list = NULL;
+
+    int ret_val, ret, i;
+
+    p_list = create_list();
+
+    for(i = 0; i < 10; ++i)
+    {
+        ret = insert_at_end(p_list, (i + 1) * 100);
+        assert(ret == SUCCESS);
+    }
+
+    show_list(p_list, "Original List");
+
+    ret_val = get_reversed_list(p_list, &p_reversed_list); 
+    show_list(p_reversed_list, "Reversed list after calling get_reversed_list");
+
+    destroy_list(p_list);
+    destroy_list(p_reversed_list);
+    p_list = NULL;
+    p_reversed_list = NULL;
+}
+
+/*
 int reverse_list(struct node* p_list); 
 */
+
+int to_array(struct node* p_list_1, int** pp_arr, int* p_size)
+{
+    int* p_arr = NULL;
+    int count = 0;
+    int i;
+    struct node* p_run = NULL;
+
+    p_run = p_list_1->next;
+    while(p_run != NULL)
+    {
+        count++;
+        p_run = p_run->next;
+    }
+
+    p_arr = (int*)calloc(count, sizeof(int));
+    assert(p_arr != NULL);
+    
+    p_run = p_list_1->next;
+    for(i = 0; i < count; ++i)
+    {
+        p_arr[i] = p_run->data;
+        p_run = p_run->next;
+    }
+    *pp_arr = p_arr;
+    *p_size = count;
+
+    return (SUCCESS);
+}
+
+int to_list(int* p_arr, int N, struct node** pp_list)
+{
+       struct node* p_list = NULL;
+       struct node* p_run = NULL;
+       int i;
+       int ret;
+
+       p_list = create_list();
+       
+       for(i = 0; i < N; ++i)
+       {
+           ret = insert_at_end(p_list, p_arr[i]);    
+           assert(ret == SUCCESS);
+       }
+
+       *pp_list = p_list;
+
+       return(SUCCESS);
+}
+
+int get_reversed_list(struct node* p_list, struct node** pp_reversed_list)
+{
+
+    struct node* p_reversed_list = NULL;
+    struct node* p_run = NULL;
+    int ret;
+
+    p_reversed_list = create_list();
+
+    p_run = p_list->next;
+    while(p_run != NULL)
+    {
+        ret = insert_at_start(p_reversed_list, p_run->data);
+        assert(ret == SUCCESS);
+        p_run = p_run->next;
+    }
+
+    *pp_reversed_list = p_reversed_list;
+   
+    return(SUCCESS);
+
+}
