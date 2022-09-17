@@ -65,13 +65,12 @@ struct node {
 
 int main(void)
 {
-    //test_suite();
-    //test_suite_2();
-    //test_suite_3();
-    //test_suite_4();
+    test_suite();
+    test_suite_2();
+    test_suite_3();
+    test_suite_4();
     test_suite_5();
-
-
+    
     return (0);
 }
 
