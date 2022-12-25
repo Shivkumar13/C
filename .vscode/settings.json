@@ -10,6 +10,9 @@
         "stdlib.h": "c",
         "generic_headerfile.h": "c",
         "genericheaderfile.h": "c",
-        "genheadfil.h": "c"
+        "genheadfil.h": "c",
+        "header.h": "c",
+        "array": "c",
+        "string": "c"
     }
 }
