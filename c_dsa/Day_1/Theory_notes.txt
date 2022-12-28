@@ -14,7 +14,7 @@ DSA Notes:
                                             1] Propositional Logic
                                             2] Predicate Logic
                                             3] Set Theory
-                                            4] Mathematical Induction
+                                               4] Mathematical Induction
 
     * Formal Verification :- For every single statement in code could be hard and lengthy
     * Formal verification :- [Loop] So you need to verify loop, that technique is called as `Loop Invariant` Technique
