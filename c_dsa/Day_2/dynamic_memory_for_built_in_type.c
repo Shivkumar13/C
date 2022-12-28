@@ -80,6 +80,3 @@ Run time/Dynamic Time:    Launch exe -> Terminate Process/application
 
      If memory is allocated dynamically so you won't be able to see the increase in the EXE size.
 */
-
-
-
