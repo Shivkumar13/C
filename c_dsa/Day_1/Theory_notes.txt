@@ -1,0 +1,43 @@
+DSA Notes:
+
+    * Proof of an algorithm
+        - How to prove in general?
+            -> Technique -> Formal Verification [Tony Hoare (Quick Sort)
+                                                 E.W. Dijikstra,
+                                                 David Gries 1970's]
+
+    * Mathematics -> 1] Continuous Mathematics
+                   2] Discrete Mathematics
+
+                    Discrete Mathematics -> Foundations [All these are covered in `Science of Programming` David Gries's
+                                                         for Formal Verification]
+                                            1] Propositional Logic
+                                            2] Predicate Logic
+                                            3] Set Theory
+                                            4] Mathematical Induction
+
+    * Formal Verification :- For every single statement in code could be hard and lengthy
+    * Formal verification :- [Loop] So you need to verify loop, that technique is called as `Loop Invariant` Technique
+                             (Introduction to algorithm by `Cormen`)
+
+    * Trying to prove the correctness of algrithm in all cases [Formal Verification OR Loop Invariant :-
+                            1] Yields better understanding of algorithms which are intuitively understood
+                            2] Algorithms which could not be cracked merely by dry run method are now accessible
+
+
+    * YT video [https://www.youtube.com/watch?v=abTaPCHggs8] at 2.17 hrs
+        - Stack picture madhe n anata recursion explain krun ghyaych
+
+    * For Built-in Datatype
+        - Built-in datatype int (malloc karycha and free karaycha)
+        - Integer cha dynamic array (malloc karycha and free karyacha)
+        - Integer pointer cha dynamic array ghyaycha (tyavr prtek pointer vr integer allocate karyacha)
+        - Mg sagle integer free karyche and then array free krycha
+
+    * User defined datatype
+        - Ek structure ghayach, tya structure cha ek instance dynamically allocate krych and free karycha
+        - tya structure cha array dynamically allocate krycha and free karyacha
+        - tya structure chya pointer cha array dynamically allocate krych(tya prtek pointer vr structure allocate karycha)
+        - mg sagle structure instance free karyche and then structure array free karycha
+
+
